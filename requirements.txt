@@ -1,3 +1,4 @@
 ollama==0.6.1
 google-genai==1.60.0
 python-dotenv==1.2.1
+colorama==0.4.6
