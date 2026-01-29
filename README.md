@@ -26,11 +26,11 @@ Download and install from [ollama.com](https://ollama.com). Then, pull the brain
 ```bash
 ollama run qwen2.5-coder:7b
 
-### 2. *Setup Project*
+### 2. Setup Project
 git clone [https://github.com/juanpablolertora/bit-python-tutor.git](https://github.com/juanpablolertora/bit-python-tutor.git)
 cd bit-python-tutor
 pip install -r requirements.txt
 
-### *Usage*
+### 3. Usage
 Start your session by running:
 python3 main.py
