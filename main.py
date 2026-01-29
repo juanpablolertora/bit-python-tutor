@@ -8,22 +8,23 @@ def main():
     try:
         tutor = PythonTutor()
     except Exception as e:
-        print(Fore.RED + f"Error de configuración: {e}")
+        print(Fore.RED + f"Configuration Error: {e}")
         return
 
     os.system('clear')
     
+    # UI Header
     print(Fore.BLUE + "┌" + "─" * 58 + "┐")
-    print(Fore.BLUE + "│ " + Fore.CYAN + "      BIT | PYTHON MENTOR & CODE ANALYZER         " + Fore.BLUE + " │")
+    print(Fore.BLUE + "│ " + Fore.CYAN + "      BIT | SENIOR PYTHON MENTOR - LOCAL AI        " + Fore.BLUE + " │")
     print(Fore.BLUE + "└" + "─" * 58 + "┘")
-    print(Fore.WHITE + Style.DIM + " Comandos: 'exit' para salir | 'clear' para limpiar pantalla\n")
+    print(Fore.WHITE + Style.DIM + " Commands: 'exit' to quit | 'clear' to reset screen | 'save' to export\n")
 
     while True:
         try:
-            user_input = input(Fore.YELLOW + "User ❯ " + Style.RESET_ALL).strip()
+            user_input = input(Fore.YELLOW + "Student ❯ " + Style.RESET_ALL).strip()
 
             if user_input.lower() in ['exit', 'quit', 'bye']:
-                print(Fore.BLUE + "\nBit: Estaré aquí cuando el código falle. ¡Adiós!")
+                print(Fore.BLUE + "\nBit: See you in the next debugging session. Happy coding!")
                 break
                 
             if user_input.lower() == 'clear':
@@ -33,26 +34,30 @@ def main():
             if not user_input:
                 continue
 
-            print(Fore.BLACK + Back.BLUE + " BIT ESTÁ PENSANDO... " + Style.RESET_ALL, end="\r")
+            # Visual thinking state
+            print(Fore.BLACK + Back.CYAN + " BIT IS THINKING... " + Style.RESET_ALL, end="\r")
             
             response = tutor.send_message(user_input)
             
-            # Limpiar la línea de "pensando"
-            print(" " * 30, end="\r")
+            # Clear "thinking" line
+            print(" " * 40, end="\r")
             
-            # Diseño de respuesta
-            print(Fore.BLUE + "╭" + "─" * 4)
-            print(Fore.BLUE + "│ " + Fore.GREEN + "BIT:")
+            # Message Design
+            print(Fore.BLUE + "╭" + "─" * 5)
+            print(Fore.BLUE + "│ " + Fore.GREEN + Style.BRIGHT + "BIT SAYS:")
             
             for line in response.split('\n'):
-                print(Fore.BLUE + "│ " + Fore.WHITE + line)
+                # Handle empty lines for better spacing
+                line_content = line if line.strip() else ""
+                print(Fore.BLUE + "│ " + Fore.WHITE + line_content)
             
-            print(Fore.BLUE + "╰" + "─" * 4 + "\n")
+            print(Fore.BLUE + "╰" + "─" * 5 + "\n")
             
         except KeyboardInterrupt:
+            print(Fore.YELLOW + "\n\nSession terminated by user.")
             break
         except Exception as e:
-            print(Fore.RED + f"\n[!] Error en el sistema: {e}")
+            print(Fore.RED + f"\n[!] System Error: {e}")
 
 if __name__ == "__main__":
     main()
