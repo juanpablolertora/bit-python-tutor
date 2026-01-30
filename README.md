@@ -34,3 +34,24 @@ pip install -r requirements.txt
 ### 3. Usage
 Start your session by running:
 python3 main.py
+
+## MACHINE
+
+dev@mint-workspace 
+          .-MMMMMMMMMMMMMMM-.               -------------- 
+      .-MMMM`..-:::::::-..`MMMM-.           OS: Linux Mint 22.3 x86_64 
+    .:MMMM.:MMMMMMMMMMMMMMM:.MMMM:.         Host: Lenovo LOQ (AMD/NVIDIA) 
+   -MMM-M---MMMMMMMMMMMMMMMMMMM.MMM-        Kernel: 6.14.x-generic 
+ `:MMM:MM`  :MMMM:....::-...-MMMM:MMM:`     Uptime: (Confidencial) 
+ :MMM:MMM`  :MM:`   ``    ``  `:MMM:MMM:    Packages: 3194 (dpkg) 
+.MMM.MMMM`  :MM.  -MM.  .MM-  `MMMM.MMM.    Shell: bash 5.2.x 
+:MMM:MMMM`  :MM.  -MM-  .MM:  `MMMM-MMM:    Resolution: 1920x1080 
+:MMM:MMMM`  :MM.  -MM-  .MM:  `MMMM:MMM:    DE: Cinnamon 6.6.6 
+:MMM:MMMM`  :MM.  -MM-  .MM:  `MMMM-MMM:    WM: Mutter (Muffin) 
+.MMM.MMMM`  :MM:--:MM:--:MM:  `MMMM.MMM.    Terminal: gnome-terminal 
+ :MMM:MMM-  `-MMMMMMMMMMMM-`  -MMM-MMM:     CPU: AMD Ryzen 7 7000 Series (16) 
+  :MMM:MMM:`                `:MMM:MMM:      GPU: NVIDIA GeForce RTX 4060 
+   .MMM.MMMM:--------------:MMMM.MMM.       Memory: 24GB RAM 
+     '-MMMM.-MMMMMMMMMMMMMMM-.MMMM-'        
+       '.-MMMM``--:::::--``MMMM-.'          
+           '-MMMMMMMMMMMMM-'
